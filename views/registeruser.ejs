@@ -1,0 +1,131 @@
+<%- include('partials/registerheader') %>
+
+<div class="container">
+    <form  method="post" action="register" class="form-horizontal" role="form">
+        <h2>Registration</h2>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Name*</label>
+            <div class="col-sm-9">
+                <input type="text" id="name" name="userName" placeholder="Name" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Roll No*</label>
+            <div class="col-sm-9">
+                <input type="text" id="rollnum" name="roll" placeholder="Roll No" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Register No*</label>
+            <div class="col-sm-9">
+                <input type="number" id="Register No" name="register" placeholder="Register No" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Joining Batch Year*</label>
+            <div class="col-sm-9">
+                <input type="number" id="Register No" name="batch" placeholder="Batch Year" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group dept">
+            <label for="department" class="col-sm-3 control-label">Department</label>
+            <div class="col-sm-9">
+                <select class="form-control" id="exampleFormControlSelect1" style="height:30px;" autofocus>
+                    <option value="C.S.E">C.S.E</option>
+                    <option value="I.T">I.T</option>
+                    <option value="E.C.E">E.C.E</option>
+                    <option value="E.E.E">E.E.E</option>
+                    <option value="MECH">MECH</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email* </label>
+            <div class="col-sm-9">
+                <input type="email" id="email" placeholder="Email" class="form-control" name="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="linkedin ID" class="col-sm-3 control-label">LinkedIn Link*</label>
+            <div class="col-sm-9">
+                <input type="text" id="likedin" placeholder="LinkedIn Id" class="form-control" name="linkedin">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber" class="col-sm-3 control-label">Phone number*</label>
+            <div class="col-sm-9">
+                <input type="Number" id="phoneNumber" name="phno" placeholder="Phone number" class="form-control">
+            </div>
+        </div>
+        <!-- /.form-group -->
+        <div class="form-group">
+            <div class="col-sm-9 col-sm-offset-3">
+                <span class="help-block">*Required fields</span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+    </form> <!-- /form -->
+</div>
+<!-- ./container -->
+<script>
+    $(function() {
+        $.validator.setDefaults({
+            highlight: function(element) {
+                $(element)
+                    .closest('.form-group')
+                    .addClass('has-error')
+            },
+            unhighlight: function(element) {
+                $(element)
+                    .closest('.form-group')
+                    .removeClass('has-error')
+            }
+        });
+
+        $.validate({
+                rules: {
+                    password: "required",
+                    birthDate: "required",
+                    weight: {
+                        required: true,
+                        number: true
+                    },
+                    height: {
+                        required: true,
+                        number: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                password: {
+                    required: " Please enter password"
+                },
+                birthDate: {
+                    required: " Please enter birthdate"
+                },
+                email: {
+                    required: ' Please enter email',
+                    email: ' Please enter valid email'
+                },
+                weight: {
+                    required: " Please enter your weight",
+                    number: " Only numbers allowed"
+                },
+                height: {
+                    required: " Please enter your height",
+                    number: " Only numbers allowed"
+                },
+            }
+
+        });
+    });
+
+</script>
