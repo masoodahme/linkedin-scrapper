@@ -6,7 +6,8 @@
     <title>Alumni Profile</title>
     <!-- google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
-    <!-custom style for home-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--custom style for home-->
     <link rel="stylesheet" href="css/home.css">
      <!-- font-awesome -->
       <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
@@ -18,26 +19,99 @@
             <i class="fas fa-search" arial-hidden="true"></i>
         </div>
     </div>
-    <div class="search">
-      <div class="search-list">
-       <button class=but>Batch #id</button>
-        <!-- <div class="batch-container">
-           <div class="batch-name">
-               Batch
-           </div>
-           <div class="batch-year">
-               2017
-           </div>
-         </div>
-          <div class="batch-container">
-           <div class="batch-name">
-               Batch
-           </div>
-           <div class="batch-year">
-               2017
-           </div>
-         </div>-->
+    <style>
+      .search-list > button
+      {
+        padding: 10px;border-radius: 10px; background-color: #fff;font-weight: bold;font-size: 1.2em;border: 0; margin: 5px;
+      }
+      .search-list > button::after{
+        content: ' \25BC';
+      }
+
+    </style>
+    <div class="search" style="height: 100vh;overflow: auto;padding-top: 50px;padding-bottom: 50px;border-radius: 20px;">
+      <div class="search-list" >
+        <button onclick="myFunction1()" ><span>Batch #id</span></button>
+        <div id="myDIV1" class="cdiv">
+          Batch565 #id
+          </div>
+        <button onclick="myFunction2()" ><span>Batch #id</span></button>
+        <div id="myDIV2" class="cdiv">
+          Batch #id
+          </div>
+        <button onclick="myFunction3()" ><span>Batch #id</span></button>
+        <div id="myDIV3" class="cdiv">
+          Batch #id
+          </div>
+        <button onclick="myFunction4()" ><span>Batch #id</span></button>
+        <div id="myDIV4" class="cdiv">
+          Batch #id
+          </div>
+        <button onclick="myFunction5()" ><span>Batch #id</span></button>
+        <div id="myDIV5" class="cdiv">
+          Batch #id
+          </div>
+        <button onclick="myFunction6()" ><span>Batch #id</span></button>
+        <div id="myDIV6" class="cdiv">
+          Batch #id
+          </div>
+          <br>
+          <br>
      </div>
     </div>
+    <script>
+        function myFunction1() {
+          var x = document.getElementById("myDIV1");
+          var y=document.getElementById("");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function myFunction2() {
+          var x = document.getElementById("myDIV2");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function myFunction3() {
+          var x = document.getElementById("myDIV3");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function myFunction4() {
+          var x = document.getElementById("myDIV4");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function myFunction5() {
+          var x = document.getElementById("myDIV5");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function myFunction6() {
+          var x = document.getElementById("myDIV6");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        $('.cdiv').hide();
+    </script>
+    
 </body>
 </html>
+
