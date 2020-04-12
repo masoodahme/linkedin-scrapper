@@ -2,13 +2,15 @@ body{
     background-color:#000000;
     font-family: 'Muli', sans-serif;
 }
-.search{
+.search {
+
     height: 550px;
     width: 250px;
-    background-color: #ffffff;
     position: absolute;
     top: 55px;
     border-radius: 70px;
+    background: #f7d794;
+
 }
 .search-container {
    position: absolute;
@@ -54,3 +56,142 @@ i.fas.fa-search{
     padding-right: 10px;
     color: white;
 }
+
+.but1 {
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    height: 58px;
+    width: 232px;
+    position: absolute;
+    top: 71px;
+    left: 10px;
+    font-size: 19px;
+}
+
+.but2 {
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    height: 58px;
+    width: 232px;
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    font-size: 19px;
+}
+
+.but3 {
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    height: 58px;
+    width: 232px;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    font-size: 19px;
+}
+
+.but4 {
+cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    height: 58px;
+    width: 232px;
+    position: absolute;
+    top: 296px;
+    left: 10px;
+    font-size: 19px;
+}
+
+.but5 {
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    height: 58px;
+    width: 232px;
+    position: absolute;
+    top: 371px;
+    left: 10px;
+    font-size: 19px;
+}
+
+.but6 {
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    height: 58px;
+    width: 232px;
+    position: absolute;
+    top: 444px;
+    left: 10px;
+    font-size: 19px;
+}
+
+.but1:after{
+    content: ' \25BC';
+}
+
+.but2:after{
+    content: ' \25BC';
+}
+
+.but3:after{
+    content: ' \25BC';
+}
+
+.but4:after{
+    content: ' \25BC';
+}
+
+.but5:after{
+    content: ' \25BC';
+}
+
+.but6:after{
+    content: ' \25BC';
+}
+#myDIV1 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+  #myDIV2 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+  #myDIV3 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+  #myDIV4 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+  #myDIV5 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+  #myDIV6 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+
